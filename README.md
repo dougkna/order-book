@@ -30,6 +30,8 @@ npm start
 
 Node server will stream order book's limit orders to client, which will process one order at a time (default set at 1 second) and display order detail in bid/ask screen. If an order can be filled partially or entirely, it will be filled at the order's price or better (limit order). Last Market Price indicates the most recent price filled.
 
+\* Room for improvement: In case of a tie in price, filling an order is not necessarily first come first served. One way this can be fixed is by using timestamp. *
+
 ## View
 
 ![order-book](https://user-images.githubusercontent.com/22410733/37554493-1fbed2d2-2a1d-11e8-966d-2c23b4885f61.gif)

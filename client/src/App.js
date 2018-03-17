@@ -103,7 +103,7 @@ class App extends Component {
       minHeap: minHeap,
       maxHeap: maxHeap,
       bidItems: this.getCurrentOrders(maxHeap, 'bid').bids,
-      offerItems: this.getCurrentOrders(minHeap, 'offer').offers,
+      offerItems: this.getCurrentOrders(minHeap, 'offer').offers.reverse(),
     })
   };
 
@@ -162,7 +162,7 @@ class App extends Component {
               <th>Amount</th>
             </tr>
 
-            {offerItems.reverse().map((offer, i) => 
+            {offerItems.map((offer, i) => 
               <tr key={i} className='offer-table'>
                 <td className='detail'>{offer[2]}</td>
                 <td className='detail'>{offer[1]}</td>
