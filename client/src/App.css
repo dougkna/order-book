@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.trade-table {
+  margin: 1em auto;
+  background-color: #bdc3c754;
+}
+
+.trade-title {
+  background-color: #3f505c36;
+}
+
+.trade-table td,th {
+  padding: 0.2em 1em
+}
+
+.offer-table .detail {
+  background-color: #297fb936;
+}
+
+.bid-table .detail {
+  background-color: #dd64644f;
+}
+
+.ob-button {
+  background-color: #fbf608;
+  color: #5f3417;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  padding: 0.8em 1.5em;
+}
+
+.ob-button:hover {
+  opacity: 0.7;
+}
+
+.ob-button:disabled,
+.ob-button[disabled]{
+  opacity: 0.3;
+}
+
+.announcement {
+  padding-top: 1em;
+}
+
+.notification .red {
+  color: #dd6464;
+}
+
+.notification .blue {
+  color: #2980b9;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

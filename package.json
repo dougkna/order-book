@@ -1,0 +1,17 @@
+{
+  "name": "order-book",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Doug K Na",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
